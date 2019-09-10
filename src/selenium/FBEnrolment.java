@@ -10,8 +10,8 @@ public static void main(String[] args) throws InterruptedException {
 	WebDriver driver = new ChromeDriver();
 	driver.get(link);
 	driver.findElement(By.className("cookiebar-agree-button-agree")).click();
-	driver.wait(5000);
-	driver.findElement(By.className("js-login-link desktop-only")).click();
+	driver.wait(2000);
+	driver.findElement(By.linkText("Log in")).click();
 	/*Validations V = new Validations();
 	if (V.validateHeader(link, driver))
 		System.out.println("Passed");
